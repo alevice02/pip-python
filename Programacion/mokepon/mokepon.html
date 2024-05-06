@@ -1,0 +1,82 @@
+<html>
+
+<head>
+    <meta charset="utf-8" /> <!-- atributo para tildes  -->
+    <title> POKEMON GO! </title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+    <section id="seleccionar-mascota"> <!-- las secciones sirven para separar situaciones  -->
+        <!-- el style height 100 vh es para que coja toda la ventana y poder hacer el flex bien  -->
+        <h1> 🌱💧🔥 POKEMON GO! 🔥💧🌱 </h1>
+        <h2 class="titulo2">Elige tu pokemón:</h2>
+        <div id="contenedor-pokemones" class="botones-pokemon">
+        </div>
+        <!-- el div sirve para agrupar en cajitas para asignarle un mismo formato de estilo o diseno -->
+
+        <button class="boton-seleccionar" id="pokemon">
+            Seleccionar</button><!-- el id es para relacionar el boton a la opcion  -->
+
+    </section>
+
+    <section id="ver-mapa">
+        <h1> Escoge a tu rival para el combate </h1>
+        <canvas id="mapa"></canvas>
+        <div class="botones-mov">
+            <button id='up' onmouseup="detener_movimiento()" onmousedown="mover_squirtle_arr()"> ↑ </button>
+            <button id='left' onmouseup="detener_movimiento()" onmousedown="mover_squirtle_izq()"> ← </button>
+            <button id='down' onmouseup="detener_movimiento()" onmousedown="mover_squirtle_abj()"> ↓ </button>
+            <button id='right' onmouseup="detener_movimiento()" onmousedown="mover_squirtle_der()"> → </button>
+            <!-- on click se haga funcion cuando clickee 
+            on mouse up y down es cuando esta oprimido hasrto tiempo-->
+
+        </div>
+    </section>
+    <!-- seccion canvas para crear mapa -->
+
+    <section id="seleccionar-ataque">
+        <h1> 🌱💧🔥 POKEMON GO! 🔥💧🌱 </h1>
+
+        <h2 id="ataquetitulo">Elige tu secuencia de 5 ataques:</h2>
+        <div id="reglas">
+            <p id="reglas1"> REGLAS DE JUEGO: Fuego 🔥 derrota a Tierra 🌱, Agua 💧 derrota a Fuego 🔥 y Tierra 🌱
+                derrota a Agua 💧 </p>
+            <p id="reglas"> El que complete mas victorias en 5 asaltos, gana </p>
+        </div>
+
+        <div id='contenedor-ataques' class="boton-ataque1">
+        </div>
+
+        <div>
+            <div class="mensajes" id="mensajes">
+                <p id="resultado"> Estás listo para la batalla?</p>
+            </div>
+            <div id="reiniciar-partida">
+                <button class="boton-reiniciar" id="reiniciar"> Reiniciar partida</button>
+            </div>
+        </div>
+
+        <div class="ataques">
+            <div class="ataques-jugador">
+                <p class="vidas"><span id="vidas-jugador" style="font-size: 28; color: darkred;">0</span></p>
+                <p id="pokemon-propio"></p>
+                <!-- el span es para indicar que ese valor es dinamico, el id es clave para relacionar un objeto aqui en el codigo de js  -->
+                <div id="ataque-jugador"></div>
+            </div>
+            <div class="ataques-enemigo">
+                <p class="vidas"><span id="vidas-enemigo" style="font-size: 28; color: darkred;">0</span> </p>
+                <p id="pokemon-enemigo"></p>
+                <div id="ataque-enemigo"></div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <script src="./js/mokepon.js"></script>
+    <!-- para que corra el script de JS, ponerlo al final  -->
+</body>
+
+</html>

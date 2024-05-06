@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400&display=swap');
+
+body {
+    display: flex;
+    background-image: url(./forest.jpg);
+    background-size: cover;
+    font-family: 'Work Sans', sans-serif;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+.juego {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+#seleccionar-mascota {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 10px;
+
+}
+
+/* se toma la seccion con el id y con el flex se alinean al gusto
+flex direction es la direccion para alinear*/
+/* background image es para poner una imagen de background*/
+
+h1 {
+    color: rgb(255, 255, 255);
+    font-size: 45;
+    margin-top: 50 px;
+
+    /* se pueden cambiar las propiedades como color background, ancho todo eso, el ancho y el alto se pueden mirar en inspeccionar en el navegador*/
+}
+
+/* se pone el nombre que esta en dentro del html en este caso h1
+/* tambien se puede poner por clase y es que se le asocia un id a ese mismo titulo y aqui se referencia con un punto antes*/
+
+.titulo2 {
+    color: #ffffff;
+    font-size: 24;
+}
+
+/* si no se pone class sino id se relaciona aqui con un #*/
+
+#reglas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#reglas1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400 px;
+}
+
+.botones-pokemon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+input {
+    display: none;
+    background-color: #33ACFF;
+    width: 20px;
+    height: 20px;
+}
+
+input:checked + label {
+    background-image: url(./images.jpg);
+    background-size: cover;
+}
+/* los dos puntos es como un tipo seleccione esa clase pero haciendo algo como checkeada y el + es para darle la orden a la linea hermana justo despues como en este caso el label*/
+
+.pokemones {
+    color: #454342;
+    background-image: url(./degrade.jpg);
+    background-size: cover;
+    padding: 5px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    border: 2px solid #454342;
+    border-radius: 10px;
+}
+
+/* clase de pokemones que son los labels cambiarle cosas, padding es el borde y box sizing es para ajustarlo
+/*el margin es para darle un margen para separar objetos
+el borde es para dar borde, ancho, solido o que tipo y color*/
+/* border radius es para redondear las puntas del boton*/
+
+.pokemones img {
+    width: 100px;
+}
+
+.boton-seleccionar {
+    background-color: #2f2d2b;
+    width: 160px;
+    height: 30px;
+    color: white;
+    font-size: 15;
+    margin: 30px;
+    border-radius: 10px;
+}
+
+#seleccionar-ataque {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+#ataquetitulo {
+    color: #ffffff;
+    font-size: 24;
+}
+
+#reglas {
+    color: #ffffff;
+}
+
+.botones-poder {
+    background-color: #2f2d2b;
+    width: 100px;
+    height: 30px;
+    color: white;
+    font-size: 15;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.mensajes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    color: black;
+    font-size: 20;
+    background-image: url(./Interior.png);
+    background-size: cover;
+    padding: 5px;
+    border: 2px solid #454342;
+    margin-top: 10px;
+}
+
+#reiniciar-partida {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#reiniciar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton-reiniciar {
+    background-color: #2f2d2b;
+    width: 160px;
+    height: 30px;
+    color: white;
+    font-size: 15;
+    margin-top: 20px;
+}
+
+.ataques {
+    display: grid;
+    grid-template-columns: 120px 120px;
+    color: white;
+    font-size: 18;
+    padding: 5px;
+    justify-items: center;
+    gap: 20px;
+}
+/* el gap es para hacer espacios entre celdas del grid, el grid es para poner como celdas para ajustar y se le agregan columnas o filas*/
+
+.ataques-jugador, .ataques-enemigo {
+    display: flex;
+    color: white;
+    font-size: 18;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.vidas {
+    margin: 0%;
+}
+
+.boton-ataque {
+    display: flex;
+    background-color: #2f2d2b;
+    color: white;
+    font-size: 30;
+    margin: 10px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.boton-ataque1 {
+    display: flex;
+    flex-direction: row;
+}
+
+#ver-mapa {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#mapa {
+    border: 5px solid white;
+    margin-bottom: 20px;
+}
+
+.botones-mov {
+    display: grid;
+    grid-template-columns: 50px 50px 50px;
+}
+
+#up {
+    grid-row: 1;
+    grid-column: 2;
+    background-color: #2f2d2b;
+    color: white;
+    font-size: 25;
+    border-radius: 5px;
+}
+
+#left {
+    grid-row: 2;
+    grid-column: 1;
+    background-color: #2f2d2b;
+    color: white;
+    font-size: 25;
+    border-radius: 5px;
+}
+
+#down {
+    grid-row: 2;
+    grid-column: 2;
+    background-color: #2f2d2b;
+    color: white;
+    font-size: 25;
+    border-radius: 5px;
+}
+
+#right {
+    grid-row: 2;
+    grid-column: 3;
+    background-color: #2f2d2b;
+    color: white;
+    font-size: 25;
+    border-radius: 5px;
+}
+
+@media (max-width: 360px) {
+    .botones-pokemon, .botones1 {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 400px) {
+    #ver-mapa div {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+/* el media max-width es para ajustar dependiendo el tamano de la pantalla*/
+/* la coma es para poner mismas caracterisitcas a varias clases*/
+
+
+
