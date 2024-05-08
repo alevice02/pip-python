@@ -1,0 +1,82 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "toc_visible": true,
+      "authorship_tag": "ABX9TyNZouW7Pvl5BMMtqLqgA0ht",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/alevice02/alevice02.github.io/blob/main/Algebra%20lineal\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 7,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "OhuaR09uywL8",
+        "outputId": "fefb5647-38a5-4c12-ef86-9de5e7479d48"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[1 2 3 4]\n",
+            "[[1 2 3]\n",
+            " [4 5 6]\n",
+            " [7 8 9]]\n",
+            "[[[ 1  2  3]\n",
+            "  [ 4  5  6]\n",
+            "  [ 7  8  9]]\n",
+            "\n",
+            " [[-1 -2 -3]\n",
+            "  [-4 -5 -6]\n",
+            "  [-7 -8 -9]]]\n"
+          ]
+        }
+      ],
+      "source": [
+        "import numpy as np\n",
+        "\n",
+        "escalar = 5.2535\n",
+        "escalar1 = True\n",
+        "escalar2 = None\n",
+        "vector = np.array([1,2,3,4])\n",
+        "matriz = np.array(\n",
+        "    [[1,2,3],[4,5,6],[7,8,9]]\n",
+        ")\n",
+        "tensor = np.array(\n",
+        "    [\n",
+        "        [[1,2,3],[4,5,6],[7,8,9]],\n",
+        "        [[-1,-2,-3],[-4,-5,-6],[-7,-8,-9]]\n",
+        "    ]\n",
+        ")\n",
+        "\n",
+        "print(vector)\n",
+        "print(matriz)\n",
+        "print(tensor)\n"
+      ]
+    }
+  ]
+}
